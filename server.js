@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 const app = express();
+const PORT = 8081;
 app.use(express.json())
 app.use(cors());
 
@@ -82,7 +83,7 @@ app.delete('/estoque/:id',(req,res)=>{
 
 
 
-app.listen(8081, () =>{
+app.listen(PORT, () =>{
     console.log("listening");
 })
 
